@@ -46,8 +46,19 @@ void KenoBet::setApostas(std::vector<number_type> &apostas){}
 
 bool KenoBet::verificaNumero(number_type num){
 	for(int i = 0; i < apostas.size(); i++){
-		if(apostas[i] == )
+		if(apostas[i] == num){
+			return false;
+		}
 	}
+	return true;
+}
+
+bool verificaCredito(float credito){
+	return credito > 0;
+}
+
+void reset(void){
+	credito = 0;
 }
 
 #endif
